@@ -60,6 +60,7 @@ const render = (messages: any, Component = App) => {
   );
 };
 
+declare const module: any;
 if (module.hot) {
   module.hot.accept(['./i18n', './containers/App'], () => {
     ReactDOM.unmountComponentAtNode(MOUNT_NODE);
